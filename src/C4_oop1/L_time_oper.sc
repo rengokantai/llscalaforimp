@@ -7,6 +7,13 @@ class Time(val hour:Int,val minute:Int){
   override def toString=f"${hour}:${minute}"
 }
 
+object Time{
+  def apply(h:Int,m:Int)=new Time(h,m)
+}
+
 new Time(9,8)-new Time(11,2)
-new Time(9,8)<new Time(11,2)
+Time(9,8)<Time(11,2)
+
+
+
 
